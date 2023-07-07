@@ -1,16 +1,4 @@
-.container {
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    height: 100vh;
-  }
-  
-  .section {
-    height: 100vh;
-    scroll-snap-align: start;
-    padding: 20px;
-  }
-  
-  .section.active {
-    background-color: lightblue;
-  }
-  
+.mainscreen-container {
+  background-color: rgb(221 240 255);
+  height: 100dvh;
+}

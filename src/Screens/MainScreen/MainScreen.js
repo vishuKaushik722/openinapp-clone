@@ -5,7 +5,9 @@ import Navbar from '../../Components/Navbar/Navbar';
 const MainScreen = () => {
 
   return (
-    <Navbar />
+    <div className='mainscreen-container'>
+      <Navbar />
+    </div>
   );
 };
 

@@ -1,0 +1,80 @@
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem;
+}
+
+.left-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.right-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-img {
+    width: 20rem;
+    height: 5rem;
+}
+
+.dropdown {
+    background-color: rgb(205, 229, 249);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .75rem;
+    border-radius: 9999px;
+    gap: 1.25rem;
+    cursor: pointer;
+}
+
+.creator-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.create-link {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: rgb(14, 111, 255);
+    padding: 1.5rem 2rem;
+    border-width: 1px;
+    border-radius: 9999px;
+    border-color: rgb(14, 111, 255);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.plus-img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.login {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 1.5rem 2.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    background-color: rgb(14, 111, 255);
+    border-radius: 9999px;
+}
+
+
+button {
+    background: transparent;
+    border-width: 0;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
