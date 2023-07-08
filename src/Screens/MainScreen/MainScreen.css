@@ -1,4 +1,68 @@
 .mainscreen-container {
   background-color: rgb(221 240 255);
-  height: 100dvh;
+  height: 90vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: transparent transparent; /* For Firefox */
 }
+
+.mainscreen-container::-webkit-scrollbar {
+  display: none;
+}
+
+.section {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  background-color: bisque;
+  margin: 2rem;
+}
+
+.section::-webkit-scrollbar {
+  display: none;
+}
+
+.section::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+
+.section.left {
+  flex-direction: row;
+}
+
+.section.right {
+  flex-direction: row-reverse;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image,
+.text {
+  width: 50%;
+  padding: 2rem;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  text-align: center;
+}
+
+/* Additional styles for images, text, etc. */

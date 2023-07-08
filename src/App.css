@@ -2,3 +2,11 @@
     font-family: Figtree-Regular,Arial,Helvetica,sans-serif;
     scroll-behavior: smooth;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    padding-top: 8rem;
+}
