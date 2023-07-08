@@ -1,69 +1,54 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './MainScreen.css';
 import Navbar from '../../Components/Navbar/Navbar';
 import Section from '../../Components/Section/Section';
 
 const MainScreen = () => {
 
-  useEffect(() => {
-    const sections = document.querySelectorAll('.section');
-
-    const handleScroll = () => {
-      const currentSection = Array.from(sections).find(section => {
-        const rect = section.getBoundingClientRect();
-        return rect.top >= 0 && rect.bottom <= window.innerHeight;
-      });
-
-      if (currentSection) {
-        const currentSectionId = currentSection.getAttribute('id');
-        console.log('Current section:', currentSectionId);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
     <div className='mainscreen-container'>
       <Navbar />
       <Section
         id="section1"
-        image={<img src="image1.jpg" alt="Image 1" />}
-        text="Text for Section 1"
+        imageid={0}
+        heading="Welcome to"
+        text="OpeninApp"
         position="left"
       />
       <Section
         id="section2"
-        image={<img src="image2.jpg" alt="Image 2" />}
-        text="Text for Section 2"
+        imageid={1}
+        heading="A Super Tool"
+        text="For Creators"
         position="right"
       />
       <Section
         id="section1"
-        image={<img src="image1.jpg" alt="Image 1" />}
-        text="Text for Section 1"
+        imageid={2}
+        heading="That Helps You"
+        text="Grow On"
         position="left"
       />
       <Section
         id="section2"
-        image={<img src="image2.jpg" alt="Image 2" />}
-        text="Text for Section 2"
+        imageid={3}
+        heading="Get Better"
+        text="Brand Deals"
         position="right"
       />
       <Section
         id="section1"
-        image={<img src="image1.jpg" alt="Image 1" />}
-        text="Text for Section 1"
+        imageid={4}
+        heading="29k+"
+        text="Creators"
         position="left"
       />
       <Section
         id="section2"
-        image={<img src="image2.jpg" alt="Image 2" />}
-        text="Text for Section 2"
+        imageid={5}
+        heading="Ready to"
+        text="Get Started?"
         position="right"
       />
     </div>

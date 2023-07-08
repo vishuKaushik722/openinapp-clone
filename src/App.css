@@ -8,5 +8,8 @@ body::-webkit-scrollbar {
 }
 
 body {
-    padding-top: 8rem;
+    padding-top: 12rem;
+    scroll-behavior: smooth;
+    background-color: rgb(221 240 255);
+    overflow: hidden;
 }

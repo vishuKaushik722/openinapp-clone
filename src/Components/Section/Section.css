@@ -1,0 +1,10 @@
+.video-container video {
+    /* height: 90%; */
+    width: 77%;
+    border-radius: 0.5rem;
+}
+
+.right {
+  flex-direction: row-reverse;
+}
+  
