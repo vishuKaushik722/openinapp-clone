@@ -2,6 +2,7 @@ import React from 'react';
 import './MainScreen.css';
 import Navbar from '../../Components/Navbar/Navbar';
 import Section from '../../Components/Section/Section';
+import Footer from '../../Components/Footer/Footer';
 
 const MainScreen = () => {
 
@@ -53,6 +54,8 @@ const MainScreen = () => {
         position="right"
       />
       </div>
+
+      <Footer />
     </div>
   );
 };
