@@ -42,7 +42,8 @@ const MainScreen = () => {
       <Section
         id="section1"
         imageid={4}
-        heading="29k+"
+        seacondhed={true}
+        heading="290k+"
         text="Creators"
         position="left"
       />
@@ -53,9 +54,8 @@ const MainScreen = () => {
         text="Get Started?"
         position="right"
       />
-      </div>
-
       <Footer />
+      </div>
     </div>
   );
 };

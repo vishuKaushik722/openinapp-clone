@@ -63,9 +63,18 @@ a {
     height: 200px;
 }
 
+a {
+    color: #2A456B;
+}
+
+a:hover {
+    color: #0E6FFF;
+}
+
 @media only screen and (max-width: 800px) {
     .footer-content {
         margin-bottom: 0;
+        padding: 0 4rem;
     }
     .ul-links {
         display: none;

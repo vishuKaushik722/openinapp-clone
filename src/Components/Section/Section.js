@@ -10,7 +10,9 @@ const videoArr = [
   "https://storage.googleapis.com/openinapp-prod-assets/openinapp%20new%20assets/Ready%20to%20get%20onboard_1.mp4"
 ];
 
-const Section = ({ imageid, heading, text, position }) => {
+const Section = ({ imageid, heading, text, position, seacondhed }) => {
+
+
   return (
     <div className="section">
       <div className={`content ${position}`}>
@@ -22,10 +24,19 @@ const Section = ({ imageid, heading, text, position }) => {
             src={videoArr[imageid]}
           />
         </div>
-        <div className='texts'> 
-          <h2>{heading}</h2>
-          <h1>{text}</h1>
-        </div>
+        {seacondhed ? 
+          <div className='texts'> 
+            <div style={{display: 'flex', alignItems: "center", gap: "0.5rem"}}>
+              <img style={{width: "3.2rem"}} src='heart.svg' /> <h2>by</h2>
+            </div>
+            <h1>{heading}</h1>
+            <h1>{text}</h1>
+          </div> : 
+          <div className='texts'> 
+            <h2>{heading}</h2>
+            <h1>{text}</h1>
+          </div>
+        }
       </div>
     </div>
   );
