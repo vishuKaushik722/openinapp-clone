@@ -22,7 +22,7 @@ const Section = ({ imageid, heading, text, position }) => {
             src={videoArr[imageid]}
           />
         </div>
-        <div>
+        <div className='texts'> 
           <h2>{heading}</h2>
           <h1>{text}</h1>
         </div>

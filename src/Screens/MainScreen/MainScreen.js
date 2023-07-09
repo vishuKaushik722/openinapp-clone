@@ -9,6 +9,7 @@ const MainScreen = () => {
   return (
     <div className='mainscreen-container'>
       <Navbar />
+      <div>
       <Section
         id="section1"
         imageid={0}
@@ -51,6 +52,7 @@ const MainScreen = () => {
         text="Get Started?"
         position="right"
       />
+      </div>
     </div>
   );
 };
